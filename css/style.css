@@ -1,0 +1,202 @@
+/*
+Theam Name: HTML;
+Date: April 2020;
+Description: Learn Basic HTML5 and CSS3;
+Version:1.0;
+Author:Ahmed Ali;
+Author URL: site.alaqsa.edu.ps
+*/
+
+body{
+    /*
+    background: radial-gradient(circle, black, white);
+    background: linear-gradient(black, white);
+    */
+    background: url("../imgs/bodybg2.jpg");
+    color: #000305;
+    font-size: 87%;
+    font-family: Arial, 'Lucida Sans Unicode', sans-serif;
+    line-height: 1.5; 
+    text-align: left;   
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #e74c3c; 
+}
+
+a:hover, a:active{
+    color: #f58233;
+}
+
+.body{
+    width: 70%;
+    margin: 10px auto;
+    clear: both;
+}
+
+.mainheader img{
+    width: 100%;
+    
+}
+/*-----------------------Main Header----------------------------------------*/
+.mainheader nav{
+    background-color: #e74c3c;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+}
+
+.mainheader nav ul{
+    text-align: center;
+    list-style: none;
+    margin: 0px auto;
+}
+
+.mainheader nav ul li{
+    display: inline;
+}
+
+.mainheader a:link, .mainheader a:visited{
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    height: 20px;
+}
+
+
+.mainheader a:hover, .mainheader a:active{
+    color: white;
+    background-color: #f58233;
+    text-shadow: none; /*1px 1px #000;*/
+}
+/*-----------------------Main Content----------------------------------------*/
+.mainContent{
+    width: 70%;
+    float: left;
+}
+.top-content{
+    background-color: #fff;
+    padding: 3%;
+    margin-top: 3%; 
+    width: 137%;
+    
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+}
+
+.post-content{
+    display: block;
+}
+
+.post-info{
+    font-size : 90%;
+    color : #999;
+    font-style: italic;
+    margin-top: -20px;
+    
+}
+
+.post-img{
+    width: 100%;
+}
+
+figure{
+    margin: 25px 0;
+    font-size: 80%;
+    color: #999;  /*رمادي*/
+    
+}
+
+#video1{
+    width: 100%;
+}
+/*-----------------------SideBar----------------------------------------*/
+
+.theSidebar{
+    width: 24%;
+    float: left;
+    margin: 2% 0 0 2%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+/*-----------------------Footer----------------------------------------*/
+.footer{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    background-color: #e74c3c;
+    height: p0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+.footer a{
+    color: white;
+    margin: 0 20px;
+}
+
+/*-----------------------CSS for Mobile----------------------------------------*/
+@media screen and (max-width:480px){
+    .body{
+        width: 90%;
+        font-size: 95%;
+    }
+    /*----------------------Main Header-----------------------*/
+    .mainheader nav{    
+        height: 160px;  
+    }
+    .mainheader ul{
+        width: 100%;
+        padding: 0px;
+    }
+    .mainheader nav ul li{
+        display: inline;
+    }
+    .mainheader a:link, .mainheader a:visited{
+        display: block;
+    }
+    .mainheader a:hover, .mainheader a:active{
+        color: white;
+        background-color: #f58233;
+        text-shadow: none;
+    }
+    /*----------------------Main Content mobile-----------------------*/
+    .mainContent{
+        width: 100%;
+    }
+    /*----------------------saidbar mobile-----------------------*/
+    .theSidebar{
+        width: 94%;
+    }
+}
+
+/*-----------------------CSS for Mobile iPad----------------------------------------*/
+@media screen and (max-width:680px){
+    .body{
+        width: 90%;
+        font-size: 95%;
+    }
+    
+    .mainheader nav{    
+        font-size: 80%;  
+    }
+    
+}
